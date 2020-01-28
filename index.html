@@ -5,28 +5,32 @@
 		<link href="css/styles.css" rel="stylesheet">
 		<script src="js/jquery-3.4.1.js"></script>
 		<script src="js/scripts.js"></script>
-		<title>List of Places Visited</title>
+		<title>List To Do</title>
 	</head>
 	<body>
 		<div class="container">
-			<h2>List of Places Visited</h2>
-			<form id="new-place">
-				<div class="form-group">
-					<label for="country">Enter name of Country:</label>
-					<input id="country" class="form-control" type="text">
+			<h2>List Checkbox</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<form id="list">
+						<div class="form-group">
+							<label for="taskList">List To Do:</label><br>
+							
+						</div>
+						
+					</form>
+					<button id="delete-button" type="submit" class="btn btn-success">Delete</button>
 				</div>
-				<div class="form-group">
-					<label for="city">Enter name of City(ies):</label>
-					<input id="city" class="form-control" type="text">
+				<div class="col-md-6">
+					<form id="newTask">
+						<div class="form-group">
+							<label for="addTask">Add Task</label>
+							<input id="addTask" class="form-control" type="text">
+						</div>
+						<button id="add-button" type="submit" class="btn btn-success">Add</button>
+					</form>
 				</div>
-				<div class="form-group">
-						<label for="year">Enter Year:</label>
-						<input id="year" class="form-control" type="text">
-					</div>
-				<button type="submit" class="btn btn-success">Submit</button>
-			</form>
-			<div class="result">
-				<p></p>
+			</div>
 			</div>
 		</div>
 	</body>
